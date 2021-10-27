@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <p>Сверстайте кнопку, клик на которую будет выводить данные о размерах экрана с помощью alert. </p>
+        <button class="btn">тык</button>
+	</div>
+    <script>
+    const btn = document.querySelector('.btn');
+
+        btn.addEventListener('click', () => {
+          alert(`Ширина экрана: ${window.screen.width}`)
+        });            
+    </script>
+</body>
+
+</html>
